@@ -60,7 +60,8 @@ jobs:
 
       - name: Update feeds
         run: |
-          chmod -R 777
+          ls -al
+          chmod -R 777 scripts
           ./scripts/feeds update -a
           ./scripts/feeds install -a
 
